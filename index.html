@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Challenge</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="GTR.jpg" alt="Image 1">
+            <h2>Title 1</h2>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <img src="Husky.jpg" alt="Image 2">
+            <h2>Title 2</h2>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <img src="F1.jpg" alt="Image 3">
+            <h2>Title 3</h2>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <img src="CATS.jpg" alt="Image 4">
+            <h2>Title 4</h2>
+            <p>Description</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CC14 Lab Act 7: Flexbox (Degay & Poklay)</p>
+    </footer>
+</body>
+
+<style>
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1c5e3;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 1fr 10%;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    
+    margin: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    margin-top: 5px;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-container {
+    max-width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.card img {
+    max-width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+
+    margin: 0 1%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px; 
+}
+
+h2 {
+    text-align: center; 
+}
+
+
+</style>
+
+</html>
